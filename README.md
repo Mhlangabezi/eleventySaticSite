@@ -27,6 +27,7 @@ module.exports = function(eleventyConfig) {
   };
 
 ```
+
 Now let us create the source file named src, this file will store all the files you will need to create a static site. From the source file, create an _includes folder, and within _include folder, create base.njk - this is your project layout.
 
 Add the following code to your layout file - base.njk:
@@ -56,6 +57,15 @@ Add the following code to your layout file - base.njk:
         </div>
   </body>
 </html>
+```
+When the configuaration file is set, create and index.md fil and add the following:
+
+```
+---
+title: AWESOME MOVIE SERIES
+layout: base.njk
+---
+Movies
 ```
 
 Let us now create our first post folder and name it posts. within posts folder, create a json file with the same name as the parent folder i.e posts.json and add the folowing content:
