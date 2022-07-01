@@ -1,1 +1,24 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div id="container">
+        <div id="header">
+        <h1> {{ title }} </h1>
+    </div>
+    <main>
+        <div id="content">
+    {{content | safe}}
+        </div>
+    </main>
+    <div id="footer">
+        Copyright &; 2022 Mhlaa
+        </div>
+  </body>
+</html>
